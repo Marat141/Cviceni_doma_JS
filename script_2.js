@@ -492,25 +492,239 @@ console.log(value2)
 //let people1 = {
 //    name: "Marat",
 //    city: "Plzeň",
-//    age: 19
+//    age: 19,
+//    gender: "male"
 //}
 //let people2 = {
 //    name: "David",
 //    city: "Brno",
-//    age: 15
+//    age: 15,
+//    gender: "male"
 //}
 //
 //let people3 = {
 //    name: "Kristýna",
 //    city: "Praha",
-//    age:50
+//    age:50,
+//    gender: "female"
 //}
 //
 //
 //function peoples(people){
-//    console.log(`Toto je ${people.name} a žije v ${people.city} a je mu/ji ${people.age} let.`)
+//    if (people.gender === "male"){
+//        console.log(`Toto je ${people.name} a žije v ${people.city} a je mu ${people.age} let.`)
+//    }
+//    else if (people.gender === "female") {
+//        console.log(`Toto je ${people.name} a žije v ${people.city} a je ji ${people.age} let.`)
+//    }
+//
 //}
 //
 //peoples(people1)
 //peoples(people2)
 //peoples(people3)
+
+////Objekty a proměné
+//let firstName = "Marat"
+//let myObject = {
+//    firstName: firstName,
+//    secondName: "Fedorov",
+//    age: 19
+//}
+//
+//console.log(myObject.firstName)
+//
+////Objekty a return
+//
+//let firstBook = {
+//    title: "Harry Potter a Kámen mudrců",
+//    author: "J. K. Rowlingová",
+//    published: 1997
+//}
+//
+//let secondBook = {
+//    title: "Harry Potter a Tajemná komnata",
+//    author: "J. K. Rowlingová",
+//    published: 1998
+//}
+//
+//function bookInfo(book) {
+//    return {
+//        basicInfo: `${book.title} od ${book.author}. `,
+//        publishing: `Kniha ${book.title} byla vydaná v roce ${book.published}`
+//    }
+//}
+//
+//let result = bookInfo(firstBook)
+//console.log(result.basicInfo + result.publishing)
+
+
+////Metody
+//let person1 = {
+//    firstName: "Marat",
+//    secondName: "Fedorov",
+//    age: 19,
+//    height: 178,
+//    salary: 10000,
+//    greet: function(friends){
+//        console.log(`Ahoj, mám ${friends} přátel. `)
+//    },
+//    toWork: function(job){
+//        return `Jdu do své práce, což je ${job}. `
+//    }
+//}
+//
+//console.log(person1.firstName)
+//console.log(person1.height)
+//person1.greet(5)
+//let result = person1.toWork("Programátor")
+//console.log(result)
+
+
+//let school = {
+//    type: "gymnázium",
+//    street: "Plešnická 15",
+//    city: "Pleškov",
+//    capacity: 1578,
+//
+//    schoolOpen: function(){
+//        console.log("Škola je otevřená. ")
+//    },
+//
+//    schoolClosed: function(){
+//        return "Škola je zavřená."
+//    }
+//}
+//
+//console.log(`Chodím do školy ${school.type} a je to v městě ${school.city}.`)
+//
+//let result = school.schoolOpen()
+//let result1 = school.schoolClosed()
+//
+//school.schoolOpen
+//console.log(result1)
+
+
+//let person1 = {
+//    firsName: "Marat",
+//    secondName: "Fedorov",
+//    age: 19, 
+//    greet: function() {
+//        console.log(this/* Zastupuje(nahrazuje) danný objekt */.firsName)
+//        console.log(this.secondName)
+//    }
+//}
+//
+//
+//
+//let person2 = {
+//    firsName: "Harry",
+//    secondName: "Potter",
+//    age: 15,
+//    greet: function() {
+//        console.log(this/* Zastupuje(nahrazuje) danný objekt */.firsName)
+//        console.log(this.secondName)
+//    }
+//}
+//
+//person1.greet()
+//person2.greet()
+
+
+
+
+//let vladniNarizeni = false
+//
+//let school = {
+//    type: "gymnázium",
+//    street: "Plešnická 15",
+//    city: "Pleškov",
+//    capacity: 1578,
+//
+//    schoolOpen: function(){
+//        console.log(`Škola ${this.type} ${this.city} je otevřená.`)
+//    },
+//
+//    schoolClosed: function(){
+//        return `Škola ${this.type} ${this.city} je zavřená.`
+//    }
+//}
+//
+//let result1 = school.schoolClosed()
+//
+////school.schoolOpen()
+////console.log(result1)
+//
+//if (vladniNarizeni === true) {
+//    let result1 = school.schoolClosed()
+//    console.log(result1)
+//}
+//else {
+//    school.schoolOpen()
+//}
+
+
+
+//let firstName = "Marat"
+//
+//// délka
+//console.log(firstName.length/* property nemusí mít () */)
+//
+////Velká písemena
+//console.log(firstName.toUpperCase(/* Metoda potřebuji () */))
+//
+////MDN String <=== (stránka) řada metod a property
+//
+////Malá písmená 
+//console.log(firstName.toLowerCase())
+
+
+//let password = "1234admin"
+//
+//if (password.length > 13) {
+//    console.log("Velmi silné heslo!")
+//}
+//else if (password.length <= 13 && password.length > 8) {
+//    console.log("Silné heslo!")
+//}
+//else {
+//    console.log("Slabé heslo!")
+//}
+//
+//if (password.includes("1234")) {
+//    console.log("Heslo nesmí obsahovat 1234!")
+//}
+//else {
+//    console.log("Heslo je v pořádku!")
+//}
+
+
+//let number = 3.1438
+//
+////zaokrouhlování na des. místa
+//console.log(number.toFixed(    3    /* zaokrouhluje */))
+//
+////MDM number <=== stránka 
+//
+//
+////Zaokrouhlování celá čísla
+//console.log(Math.round(number))
+//console.log(Math.floor(number))/* vždycky dolu */
+//console.log(Math.ceil(number))/* Vždycky nahoru */
+//
+////náhodné číslo!
+//
+//console.log(Math.ceil(Math.random() * 10 ))
+//console.log(Math.ceil(Math.random() * 10 ))
+//console.log(Math.ceil(Math.random() * 10 ))
+//
+//
+//// náhodné číslo z intervalu
+//
+//console.log("TEST")
+//let min = 15
+//let max = 20
+//
+//console.log(Math.floor(Math.random() * (max - min + 1)) + min)
+//console.log(Math.floor(Math.random() * (max - min + 1)) + min)
+//console.log(Math.floor(Math.random() * (max - min + 1)) + min)
