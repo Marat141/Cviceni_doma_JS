@@ -419,3 +419,98 @@ console.log(value2)
 //let award = "nejlepší výkon ve výpravě"
 //
 //console.log(`Viděl jsem film ${movie}, který režíroval ${director}. Tento film získal ocenění ${award}.`)
+
+
+////Objekty: vícero informací napr. => Nadpis, obrázek odstavec tak s třemi informacemi se naklada jako s jendím objektem, ve kterém je několik info
+//
+//let myBook /* Objekt */ = {
+//    title: "Harry Potter a kámen mudrců",
+//    autor: "J. K. Rowlingova",
+//    published: 1997
+//}
+//
+////výpis jednotlivých vlastností
+//console.log(myBook.title)
+//console.log(myBook.autor)
+//console.log(myBook.published)
+//
+////výpis všech vlastností najednou
+//console.log(`${myBook.title} je kniha od ${myBook.autor} a byla vydaná ${myBook.published}`)
+//
+////změná vlastností objektu
+//myBook.title = "Harry Potter a Tajemná komnata"
+//myBook.published = 1998
+//
+//console.log(`${myBook.title} je kniha od autorky ${myBook.autor} a byla vydaná ${myBook.published}`)
+
+
+//let people = {
+//    name: "Marat",
+//    city: "Plzeň",
+//    age: 19
+//}
+//
+//console.log(`Jmenuje se ${people.name} je mu ${people.age} let a pochází z města ${people.city}.`)
+//
+//people.name = "David"
+//people.city = "Brno"
+//people.age = 15
+//
+//console.log(`Jmenuje se ${people.name} je mu ${people.age} let a pochází z města ${people.city}.`)
+//
+//people.name = "Kristýna"
+//people.city = "Praha"
+//people.age = 50
+//
+//console.log(`Jmenuje se ${people.name} je jí ${people.age} let a pochází z města ${people.city}.`)
+
+
+
+
+//let firstBook /* Objekt */ = {
+//    title: "Harry Potter a Kámen mudrců",
+//    autor: "J. K. Rowlingova",
+//    published: 1997
+//}
+// 
+//
+//let secondBook = {
+//    title: "Harry Potter a Tajemná komnata",
+//    autor: "J. K. Rowlingova",
+//    published: 1998
+//}
+//
+//function resultBook(book) {
+//    console.log(`Kniha od ${book/*book se nahradí za first nebo secondBook*/.autor} z roku ${book.published} se jmenuje ${book.title}`)
+//}
+//
+//resultBook(firstBook)
+//resultBook(secondBook)
+
+
+
+//let people1 = {
+//    name: "Marat",
+//    city: "Plzeň",
+//    age: 19
+//}
+//let people2 = {
+//    name: "David",
+//    city: "Brno",
+//    age: 15
+//}
+//
+//let people3 = {
+//    name: "Kristýna",
+//    city: "Praha",
+//    age:50
+//}
+//
+//
+//function peoples(people){
+//    console.log(`Toto je ${people.name} a žije v ${people.city} a je mu/ji ${people.age} let.`)
+//}
+//
+//peoples(people1)
+//peoples(people2)
+//peoples(people3)
