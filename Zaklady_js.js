@@ -728,3 +728,194 @@ console.log(value2)
 //console.log(Math.floor(Math.random() * (max - min + 1)) + min)
 //console.log(Math.floor(Math.random() * (max - min + 1)) + min)
 //console.log(Math.floor(Math.random() * (max - min + 1)) + min)
+
+
+
+
+//let number1 = Math.ceil(Math.random() * 6)
+//let number2 = Math.ceil(Math.random() * 6)
+//let number3 = Math.ceil(Math.random() * 6)
+//let number4 = Math.ceil(Math.random() * 6)
+//let number5 = Math.ceil(Math.random() * 6)
+//let number6 = Math.ceil(Math.random() * 6)
+//
+//let sum = number1 + number2 + number3 + number4 + number5 + number6
+//
+//console.log(`Součet je: ${sum}.`)
+//
+//if (sum >= 25){
+//    console.log("Vítěz!")
+//}
+//else {
+//    console.log("Zkus znovu své štěstí!")
+//}
+
+
+//// Konstanta a proměné
+//const firsName = "Marat" //const předpokláda se že ji nebudeme měnit
+////Lepe se čté kód
+//console.log(firsName)
+//
+////Konstanta a objekty
+//const person = {
+//    age: 19 //S age: můžeme přepisovat 
+//}
+//
+//person.age = 50
+
+
+////Barvení textu v konzoli
+//
+//console.log("%c tento text je barevný", 
+//    "color: blue; font-weight: bold;")
+
+
+////Pole a ruzná prace a cykly
+//
+//let emloyees = ["Marat", "Martin", "Jana"] //list [ALT GR + F]
+//
+//console.log(emloyees[0])
+//console.log(emloyees[1])
+//console.log(emloyees[2])
+//
+////Delká pole
+//
+//console.log(emloyees.length)
+//
+//console.log(emloyees[emloyees.length-1])
+
+
+////random generovani hesla z listu
+//let passwords = ["MaratJeGay_", "GabaJeGay_1", "TobiasJeGay_2"]
+//
+//let randomNumber = Math.ceil(Math.random() * 3)
+//
+//let index = passwords.length - randomNumber
+//
+//console.log(passwords[index])
+
+
+
+////přepsaní prvku
+//let testArray = ["test1", "test2", "test3"]
+//testArray[0] = "Nový prvek v poli"
+//console.log(testArray)
+//
+////přidání posledního prvku
+//let myArray = ["Jedna", "Dva", "Tři"]
+//myArray.push("Čtyři")
+//console.log(myArray)
+//
+////odstranění posledního prvku
+//myArray.pop()
+//console.log(myArray)
+//
+////přidání prvního prvku
+//myArray.unshift("Nula")
+//console.log(myArray)
+//
+////odstranění prního prvku
+//myArray.shift()
+//console.log(myArray)
+
+
+////mdn array -properties a methods
+////odstranění z libovolné pozice v listu (poli)
+//
+//let mySecondArray = ["Jedna", "Dva", "Tři"]
+//mySecondArray.splice(0,1) //Vypíše na číslu kde chceme začít (Zační na prvku 1 a odstran 2 prvky pred tebou)
+//console.log(mySecondArray)
+//
+//let myThirdArray = ["Jedna", "Dva", "Čtyři"]
+//myThirdArray.splice(2,0, "Tři")// 2 nám říka jaký prvek má vybrat, 0 říka nic nemaž a přidej tři před 
+//console.log(myThirdArray)
+
+//let firstName = prompt("Zadej jméno")
+//console.log(firstName)
+
+//let myArray = []
+//myArray.push(prompt("Přidej jméno"))
+//myArray.push(prompt("Přidej jméno"))
+//myArray.push(prompt("Přidej jméno"))
+//console.log(myArray)
+//
+//myArray.unshift(prompt("Přidej jméno na začátek"))
+//console.log(myArray)
+//myArray.unshift(prompt("Přidej jméno na začátek"))
+//console.log(myArray)
+//myArray.unshift(prompt("Přidej jméno na začátek"))
+//console.log(myArray)
+
+
+//let employees = ["David", "Harry", "Marat", "Gabriel", "Draco"]
+//
+////employees.forEach/* Cyklus */(function(){
+////    console.log("Testujeme")
+////})
+////
+////employees.forEach(function(person){
+////    console.log(person)
+////})
+//
+//
+//employees.forEach(function(person, index){
+//    console.log(index)
+//    console.log(person)
+//})
+
+
+////cyklus for
+//for(let i =0; i <= 5; i++){
+//    console.log(`${i+1}: Testovací text`)
+//}
+//
+////obracený cyklus for
+//for(let j = 3; j>= 0; j--){
+//    console.log("Další test")
+//}
+//
+////výpis pole pomocí cyklu for
+//
+//let emloyees = ["David", "Jana", "Martin", "Gabriel", "Simona"]
+//
+//for(let k = 0; k < emloyees.length; k++){
+//    console.log(emloyees[k])
+//}
+
+
+//let emloyees = ["Marat", "Marek", "Jana"]
+//
+//console.log(emloyees.indexOf("Marek"))
+//
+//if (emloyees.indexOf("Marat") === -1){
+//    console.log("Uživatel nebyl nalezen")
+//}
+//else{
+//    console.log("Uživatel byl nalezen")
+//}
+
+
+//let books = [{
+//    tittle: "Harry Potter a kámen mudrců",
+//    author: "J. K. Rowlingová",
+//    published: 1997
+//}, {
+//    tittle: "Harry Potter a Tajemná komnata",
+//    author: "J. K. Rowlingová",
+//    published: 1998
+//}, {
+//    tittle: "Harry Potter a vězeň z Azkabanu",
+//    author: "J. K. Rowlingová",
+//    published: 1999
+//}]
+//
+////filtrování na běžném poli 
+//
+//let names = ["Jana", "Anna", "Naděžda", "David"]
+//
+//let arrayResults = names.filter(function(oneName){
+//    let weTryFind = oneName.toLowerCase().includes("na")
+//    return weTryFind 
+//})
+//console.log(arrayResults)
+
