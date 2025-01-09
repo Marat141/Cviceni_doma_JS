@@ -955,3 +955,94 @@ console.log(value2)
 //paragraph.forEach(function(oneParagraph){
 //    console.log(oneParagraph.innerHTML)
 //})
+
+
+
+//let paragraphs = document.querySelectorAll("p");
+//
+//paragraphs.forEach(function(oneParagraphs){
+//    if(oneParagraphs.textContent.toLowerCase().includes("nakrmit")){
+//        oneParagraphs.remove()
+//    }
+//})
+
+
+// Vytváříme nové html elementy a přidáváme je do stránky:
+    /*const newParagraphs = document.createElement("p");
+    newParagraphs.textContent ="Text do nového odstavce";
+    document.querySelector("header").appendChild(newParagraphs)*/
+
+/*
+Vytváříme nové html elementy a přidáváme je do stránky
+    const newParagraphs = document.createElement("p");
+    newParagraphs.textContent ="Text do nového odstavce";
+    document.querySelector("header").appendChild(newParagraphs);
+
+    const newDiv = document.createElement("div");
+    document.querySelector("header").appendChild(newDiv);
+
+    const secondParaghraph = document.createElement("p");
+    secondParaghraph.textContent = "Test more";
+    newDiv.appendChild(secondParaghraph);
+*/
+
+/*
+ ToDoAppka: tvorba pole objektů a vypsání počtu zbývajících úkolů
+    let myToDos = [
+    {
+        text: "Vynést koš",
+        completion: false,
+    }, 
+    {
+        text: "Dojít nakoupit",
+        completion: false,
+    }, 
+    {
+        text: "Uklidit",
+        completion: true,
+    }, 
+    {
+        text: "Nakrmit psa",
+        completion: true,
+    }, 
+    {
+        text: "Nakrmit kočku",
+        completion: false,
+    }]
+
+    let toDoLeft = myToDos.filter(function(oneToDo){
+        return !oneToDo.completion
+    })
+
+    const paragraph = document.createElement("p");
+    paragraph.textContent = `Ještě zbýva ${toDoLeft.length} úkolů.`
+
+    document.querySelector("main").appendChild(paragraph);
+
+    for(let i = 0; i < myToDos.length; i++){
+        let paragraph = document.createElement("p")
+        paragraph.textContent = myToDos[i].text
+        document.querySelector("main").appendChild(paragraph)
+    }
+*/
+
+
+/*Kliknutí výzva: změň texty odstavcům po kliknutí
+    document.querySelector("h1").addEventListener("click", function(event){
+    //call back function
+
+        event.target.textContent = "Ahoj, klikl si na mě"
+    })
+
+    document.querySelector("h2").addEventListener("click", function(event){
+        //call back function
+        
+            event.target.textContent = "Ahoj, klikl si na mě"
+    })
+
+
+    document.querySelector("h3").addEventListener("click", function(event){
+        //call back function
+        event.target.textContent = "Ahoj, klikl si na mě"
+    })
+*/
