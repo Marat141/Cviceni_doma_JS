@@ -1046,3 +1046,13 @@ Vytváříme nové html elementy a přidáváme je do stránky
         event.target.textContent = "Ahoj, klikl si na mě"
     })
 */
+
+
+/*Zachytáváme text v políčku (Event listener change a input)
+    let input = document.querySelector("#input-text")
+
+    input.addEventListener("input", function(event){
+      console.log(event.target.value)
+    })
+*/
+

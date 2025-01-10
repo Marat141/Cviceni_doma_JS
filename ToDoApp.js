@@ -35,7 +35,7 @@ for(let i = 0; i < myToDos.length; i++){
     document.querySelector("main").appendChild(paragraph)
 }
 
-document.querySelector("a").addEventListener("click", function(event){
+document.querySelector(".myBtn").addEventListener("click", function(event){
     event.target.textContent = "Ahoj"
 
 })
